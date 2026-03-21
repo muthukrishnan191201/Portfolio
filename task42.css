@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 641px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.outside{
+    height: 450px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(0, 83, 0);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px black;
+    position: relative;
+    overflow: hidden;
+}
+.outside:hover{
+    box-shadow: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+.heading{
+    height: 30%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.image{
+    height: 55%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.inside{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 470px;  
+    transition-duration: 3s;
+}
+.inisde>form{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.username{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.password{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.int1{
+    width: 120%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.button{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    background-color: green;
+    margin: 10px 0px 0px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.outside:hover .inside{
+    top: 155px;
+}

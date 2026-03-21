@@ -1,0 +1,1454 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* First Page */
+
+.back{
+    background-image: url("./6c8250f55d8f3699190881de2c2e45caac6eb401.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    min-height: 640vh;
+    position: relative;
+}
+.bar{
+    width: 90%;
+    top: 20px;
+    left: 5%;
+    overflow: hidden;
+    z-index: 8;
+}
+.bar1{
+    z-index: 1;
+    transition: all 1s;
+}
+.bar2{
+    transition: all 1s;
+    overflow: hidden;
+}
+.bar4{
+    position: relative;
+    z-index: 1;
+    transition: all 1s;
+}
+.bar5{
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    top: 3px;
+    left: -100px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background: linear-gradient(45deg, rgb(170, 76, 173));
+}
+.bar6{
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 8px;
+    left: -100px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background: linear-gradient(45deg, rgb(170, 76, 173));
+}
+.bar .bar1:nth-child(1):hover~.bar5{
+    width: 190px;
+    left: 9px;
+}
+.bar2 .bar3 .bar4:nth-child(1):hover~.bar6{
+    left: 4px;
+    width: 80px;
+}
+.bar2 .bar3 .bar4:nth-child(2):hover~.bar6{
+    left: 95px;
+    width: 80px;
+}
+.bar2 .bar3 .bar4:nth-child(3):hover~.bar6{
+    left: 187px;
+    width: 110px;
+}
+.bar2 .bar3 .bar4:nth-child(4):hover~.bar6{
+    left: 300px;
+    width: 80px;
+}
+.bar2 .bar3 .bar4:nth-child(5):hover~.bar6{
+    left: 385px;
+    width: 90px;
+}
+.bar2 .bar3 .bar4:nth-child(6):hover~.bar6{
+    left: 485px;
+    width: 90px;
+}
+.firstpage{
+    top: 120px;
+    animation: first 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes first{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.socialmedia{
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px 5px 0px 0px;
+    clip-path: path("M 0,0 L 45,40 A 10,10 0,0,1 50,50 L 50,250 A 10,10 0,0,1 45,260 L 0,300 L 0,0 Z");
+    left: -47px;
+    transition: all 0.5s;
+    gap: 30px;
+    background-color: rgba(220, 220, 220, 0.377);
+    border-right: 3px solid cyan;
+}
+.socialmedia i{
+    font-size: 30px;
+}
+.socialmedia:hover{
+    left: -5px;
+    border: none;
+}
+.myname{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.myname h1{
+    height: 80px;
+    width: 70%;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 80px 0px 0px 120px;
+    transform: scale(1.2);
+    background: linear-gradient(-90deg, purple);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -moz-background-clip: text;
+    -moz-text-stroke: 4px transparent;
+    position: relative;
+}
+.myname h1::before{
+    content: "HI, I'M MUTHU KRISHNAN";
+    font-size: 4rem;
+    white-space: nowrap;
+    color: purple;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid purple;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    left: 0px;
+    animation: slideshow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slideshow{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95.5%;
+    }
+}
+.text1{
+    padding: 0px 0px 0px 100px;
+}
+.text1 span{
+    color: purple;
+}
+.text2{
+    padding: 30px 200px 0px 290px;
+    text-align: center;
+}
+.but{
+    margin: 0px 0px 0px 100px;
+}
+
+
+/* Second Page */
+
+
+.secondpage{
+    height: 100vh;
+    top: 641px;
+    background-color: black;
+    animation: second 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes second{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.runing{
+    width: 3000%;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transform: scale(1.2);
+    background: linear-gradient(-90deg, purple);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -moz-background-clip: text;
+    -moz-text-stroke: 4px transparent;
+}
+.abouthead{
+    padding: 40px 0px 0px;
+}
+.aboutbody{
+    background-color: black;
+}
+.pictureside{
+    min-height: 525px;
+    width: 50%;
+    animation: slide1 2s linear;
+    animation-timeline:view();
+    animation-range: entry 0% cover 50%;
+    animation-fill-mode: forwards;
+}
+@keyframes slide1{
+    from{
+        left: -600px;
+    }
+    to{
+        left: 0px;
+    }
+}
+.contentside{
+    min-height: 525px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+.imagebox{
+    height: 300px;
+    width: 250px;
+    z-index: 1;
+    right: 50px;
+    top: 100px;
+}
+.picture{
+    border: 2px solid purple;
+}
+.imagebox1{
+    height: 200px;
+    width: 200px;
+    top: 280px;
+    right: 180px;
+}
+.side1 h1 span{
+    color: purple;
+}
+.side1{
+    height: 100px;
+    width: 90%;
+    margin: 87px 0px 0px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.picture3{
+    height: 30px;
+    width: 55px;
+}
+.side2{
+    height: 100px;
+    width: 90%;
+    color: white;
+    margin: 0px 0px 0px 40px;
+    padding: 0px 100px 0px 0px;
+}
+.side3{
+    height: 80px;
+    width: 83%;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 20px;
+}
+.firside{
+    height: 90%;
+    width: 20%;
+    color: white;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid purple;
+    transition: all 1s;
+}
+.firside h1{
+    margin: 0px;
+}
+.firside p{
+    font-size: 10px;
+}
+.firside:hover{
+    transform: scale(1.2);
+}
+.secside{
+    height: 90%;
+    width: 20%;
+    color: white;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid purple;
+    transition: all 1s;
+}
+.secside h1{
+    margin: 0px;
+}
+.secside p{
+    font-size: 10px;
+}
+.secside:hover{
+    transform: scale(1.2);
+}
+
+
+/* Third Page */
+
+.thirdpage{
+    height: 100vh;
+    top: 690px;
+    background-color: black;
+    animation: third 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes third{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.skillhead{
+    padding: 40px 0px 0px;
+}
+.skillbody{
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.fullcard{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0px;
+    gap: 20px;
+}
+.centercard{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    transition: all 1s;
+    background-color: black;
+    transform-style: preserve-3d;
+    transform: perspective(450px);
+}
+.but1:hover+.centercard{
+    transform: rotateY(180deg);
+}
+.frontcard{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    font-size: 30px;
+    color: white;
+}
+.frontcard img{
+    height: 50%;
+    width: 50%;
+    transform: translateZ(20px);
+}
+.backcard{
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    color: white;
+}
+.backcard p{
+    transform: translateZ(20px);
+}
+.but1{
+    background-color: rebeccapurple;
+    color: white;
+}
+.but:hover{
+    border: none;
+}
+.overview{
+    height: 100px;
+    width: 60px;
+    background-color: black;
+    left: -35px;
+    top: 100px;
+}
+.overview img{
+    height: 100%;
+    width: 100%;
+    transform: translateZ(20px);
+}
+
+/* Fourth Page */
+
+.fourthpage{
+    top: 940px;
+    background-color: black;
+    animation: fourth 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes fourth{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.projecthead{
+    padding: 40px 0px 0px;
+}
+.projectbody{
+    background-color: black;
+    min-height: 100vh;
+}
+.projectitle{
+    font-size: 180px;
+    border: 2px solid white;
+    text-align: center;
+}
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px;
+}
+.box1{
+    overflow: hidden;
+    background: none;
+    background-color: none;
+    animation: reveal 2s cubic-bezier(.08,.3,.41,1.05) 1s forwards;
+    animation-timeline:view();
+    animation-range: entry 0% cover 50%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 5px 5px 50px 33px rgba(0, 255, 106, 0.2);
+}
+@keyframes reveal {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        height: 0px;
+        width: 250px;
+    }
+    100% {
+        width: 250px;
+        height: 350px;
+        opacity: 1;
+    }
+}
+.textover{
+    top: 40px;
+    left: 28px;
+    opacity: 0.7;
+}
+
+/* Fifth Page */
+
+.fifthpage{
+    top: 930px;
+    background-color: black;
+    animation: fifth 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes fifth{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.educationhead{
+    padding: 40px 0px 0px;
+}
+.educationbody{
+    min-height: 60vh;
+    background-color: black;
+    gap: 50px;
+}
+.study{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress-ring {
+    transform: rotate(-90deg);
+}
+.progress-ring__circle1{
+    stroke-dasharray: 370; 
+    stroke-dashoffset: 130.68; 
+    transition: stroke-dashoffset 0.35s;
+}
+.progress-ring__circle2{
+    stroke-dasharray: 290; 
+    stroke-dashoffset: 130.68; 
+    transition: stroke-dashoffset 0.35s;
+}
+.progress-ring__circle3{
+    stroke-dasharray: 395; 
+    stroke-dashoffset: 130.68; 
+    transition: stroke-dashoffset 0.35s;
+}
+.percentage {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 235px;
+}
+
+/* Sixth Page */
+
+.sixthpage{
+    top: 940px;
+    background-color: black;
+    animation: fifth 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+@keyframes fifth{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.contacthead{
+    padding: 40px 0px 0px;
+}
+.contactbody{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px 200px;
+}
+.firbox{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secbox{
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(20px);
+}
+.thibox{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    transform: translateZ(20px);
+    transition: all 5s;
+}
+.lastbox{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    transform: translateZ(20px);
+}
+.thibox:hover .lastbox{
+    transform: scale(1.5);
+}
+.firbox img{
+    height: 100%;
+    width: 100%;
+}
+.secbox img{
+    height: 100%;
+    width: 100%;
+}
+.thibox img{
+    height: 100%;
+    width: 100%;
+}
+.lastbox img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Mobile Responsive 300px to 600px */
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    /* Mobile First Page */
+
+    .back{
+        min-height: 1400vh;
+        width: 100%;
+        /* background-position-y: 20%; */
+    }
+    .bar{
+        z-index: 8;
+    }
+    .bar2{
+        padding: 0px 0px 0px 20px;
+    }
+    .bar4{
+        padding: 10px 0px 5px 0px;
+    }
+    .bar6{
+        left: -120px;
+    }
+    .firstpage{
+        top: 120px;
+
+    }
+    .myname{
+        left: 5%;
+        top: 0px;
+        position: absolute;
+        text-align: center;
+    }
+    .myname h1{
+    height: 20px;
+    width: 70.7%;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin:0px;
+    white-space: nowrap;
+    transform: scale(1.2);
+    background: linear-gradient(-90deg, purple);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -moz-background-clip: text;
+    -moz-text-stroke: 4px transparent;
+    position: relative;
+}
+.myname h1::before{
+    content: "HI, I'M MUTHU KRISHNAN";
+    font-size: 1rem;
+    white-space: nowrap;
+    color: purple;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid purple;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    left: 0px;
+    animation: slideshow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slideshow{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+    .text1{
+        padding: 0px 0px 0px 0px;
+    }
+    .text2{
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .but{
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* Mobile Second Page */
+
+    .secondpage{
+        top: 510px;
+        background-color: black;
+    }
+    .runing{
+        width: 3000%;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        transform: scale(1.2);
+        background: linear-gradient(-90deg, purple);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        -moz-background-clip: text;
+        -moz-text-stroke: 4px transparent;
+    }
+    .abouthead{
+        padding: 40px 0px 0px;
+    }
+    .aboutbody{
+        background-color: black;
+        flex-direction: column;
+    }
+    .pictureside{
+        min-height: 425px;
+        width: 100%;
+    }
+    .imagebox{
+        height: 250px;
+        width: 200px;
+        z-index: 1;
+        right: 40px;
+        top: 60px;
+    }
+    .contentside{
+        min-height: 425px;
+        width: 100%;
+    }
+    .imagebox1{
+        height: 170px;
+        width: 170px;
+        top: 210px;
+        right: 140px;
+    }
+    .side1{
+        width: 80%;
+        text-align: center;
+        margin: 0px;
+    }
+    .side2{
+        height: 160px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .side3{
+        justify-content: center;
+    }
+    .firside{
+        height: 70px;
+        width: 35%;
+    }
+    .secside{
+        height: 70px;
+        width: 35%;
+    }
+    .firside h1{
+        margin: 5px 0px 0px 0px;
+    }
+     .secside h1{
+        margin: 5px 0px 0px 0px;
+    }
+
+    /* Mobile Third Page */
+
+    .thirdpage{
+        height: 220vh;
+        top: 850px;
+        background-color: black;
+    }
+    .skillhead{
+        padding: 40px 0px 0px;
+    }
+    .skillbody{
+        background-color: black;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .fullcard{
+        height: 400px;
+        width: 300px;
+    }
+    .centercard{
+        height: 300px;
+        width: 250px;
+    }
+    .overview{
+        height: 80px;
+        width: 40px;
+        top: 110px;
+        left: -20px;
+    }
+    
+
+    /* Mobile Fourth Page */
+
+    .fourthpage{
+        top: 2010px;
+        background-color: black;
+    }
+    .projecthead{
+        padding: 40px 0px 0px;
+    }
+    .projectbody{
+        background-color: black;
+        min-height: 80vh;
+    }
+    .projectitle{
+        font-size: 40px;
+    }
+    .projects{
+        grid-template-columns: auto;
+    }
+    .textover{
+        left: 55px;
+    }
+
+    /* Mobile Fifth Page */
+
+    .fifthpage{
+        top: 2050px;
+        background-color: black;
+    }
+    .educationhead{
+        padding: 40px 0px 0px;
+    }
+    .educationbody{
+        min-height: 130vh;
+        gap: 20px;
+    }
+    .percentage1{
+        top: 145px;
+    }
+    .percentage2{
+        top: 390px;
+    }
+    .percentage3{
+        top: 640px;
+    }
+
+/* Mobile Sixth Page */
+
+    .sixthpage{
+        min-height: 120vh;
+        top: 1950px;
+        background-color: black;
+    }
+    .contacthead{
+        padding: 40px 0px 0px;
+    }
+    .contactbody{
+        grid-template-columns: auto;
+    }
+}
+
+
+/* Tab Responsive 600px to 900px */
+@media only screen and (min-width:600px) and (max-width:900px) {
+
+    /* Tab First Page */
+
+    .back{
+        min-height: 900vh;
+        width: 100%;
+    }
+    .bar{
+        z-index: 1;
+    }
+    .bar2{
+        padding: 0px 0px 0px 20px;
+    }
+    .bar4{
+        padding: 10px 0px 5px 0px;
+    }
+    .bar6{
+        left: -120px;
+    }
+    .firstpage{
+        top: 120px;
+    }
+    .myname{
+        left: 5%;
+        position: absolute;
+        text-align: center;
+    }
+    .myname h1{
+    height: 40px;
+    width: 59%;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin:0px;
+    white-space: nowrap;
+    transform: scale(1.2);
+    background: linear-gradient(-90deg, purple);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -moz-background-clip: text;
+    -moz-text-stroke: 4px transparent;
+    position: relative;
+}
+.myname h1::before{
+    content: "HI, I'M MUTHU KRISHNAN";
+    font-size: 2rem;
+    white-space: nowrap;
+    color: purple;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid purple;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    left: 0px;
+    animation: slideshow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slideshow{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+    .text1{
+        padding: 0px 0px 0px 0px;
+    }
+    .text2{
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .but{
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* Tab Second Page */
+
+    .secondpage{
+        top: 410px;
+        background-color: black;
+    }
+    .runing{
+        width: 3000%;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        transform: scale(1.2);
+        background: linear-gradient(-90deg, purple);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        -moz-background-clip: text;
+        -moz-text-stroke: 4px transparent;
+    }
+    .abouthead{
+        padding: 40px 0px 0px;
+    }
+    .aboutbody{
+        background-color: black;
+        flex-direction: column;
+    }
+    .pictureside{
+        min-height: 425px;
+        width: 100%;
+    }
+    .imagebox{
+        height: 300px;
+        width: 250px;
+        z-index: 1;
+        right: 250px;
+        top: 40px;
+    }
+    .contentside{
+        min-height: 425px;
+        width: 100%;
+    }
+    .imagebox1{
+        height: 170px;
+        width: 170px;
+        top: 240px;
+        right: 400px;
+    }
+    .side1{
+        width: 90%;
+        text-align: center;
+        margin: 0px;
+    }
+    .side2{
+        height: 70px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .side3{
+        justify-content: center;
+    }
+    .firside{
+        height: 70px;
+        width: 25%;
+    }
+    .secside{
+        height: 70px;
+        width: 25%;
+    }
+    .firside h1{
+        margin: 5px 0px 0px 0px;
+    }
+     .secside h1{
+        margin: 5px 0px 0px 0px;
+    }
+
+    /* Tab Third Page */
+
+    .thirdpage{
+
+        top: 750px;
+        background-color: black;
+    }
+    .skillhead{
+        padding: 40px 0px 0px;
+    }
+    .skillbody{
+        background-color: black;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .fullcard{
+        height: 400px;
+        width: 300px;
+    }
+    .centercard{
+        height: 300px;
+        width: 250px;
+    }
+    .overview{
+        height: 80px;
+        width: 40px;
+        top: 110px;
+        left: -20px;
+    }
+
+    /* Tab Fourth Page */
+
+    .fourthpage{
+        top: 1530px;
+        background-color: black;
+    }
+    .projecthead{
+        padding: 40px 0px 0px;
+    }
+    .projectbody{
+        background-color: black;
+        min-height: 80vh;
+    }
+    .projectitle{
+        font-size: 40px;
+    }
+    .projects{
+        grid-template-columns: auto auto;
+    }
+    .textover{
+        left: 55px;
+    }
+
+
+/* Tab Fifth Page */
+
+    .fifthpage{
+        top: 1630px;
+        background-color: black;
+    }
+    .educationhead{
+        padding: 40px 0px 0px;
+    }
+    .educationbody{
+        min-height: 200vh;
+    }
+    .educationhead{
+        padding: 40px 0px 0px;
+    }
+    .educationbody{
+        min-height: 70vh;
+        gap: 20px;
+    }
+    .percentage1{
+        top: 230px;
+    }
+    .percentage2{
+        top: 230px;
+    }
+    .percentage3{
+        top: 230px;
+    }
+
+    /* Tab Sixth Page */
+
+    .sixthpage{
+        top: 1550px;
+    }
+    .contacthead{
+        padding: 40px 0px 0px;
+    }
+    .contactbody{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+/* Laptop 900px to 1440px */
+
+@media only screen and (min-width:900px) and (max-width:1300px) {
+
+/* Laptop First Page */
+
+    .back{
+        min-height: 700vh;
+        width: 100%;
+    }
+    .bar{
+        z-index: 1;
+    }
+    .bar2{
+        padding: 0px 0px 0px 20px;
+    }
+    .bar4{
+        padding: 10px 0px 5px 0px;
+    }
+    .bar6{
+        left: -120px;
+    }
+    .firstpage{
+        top: 120px;
+    }
+    .myname{
+        left: 5%;
+        position: absolute;
+        text-align: center;
+    }
+    .myname h1{
+    height: 60px;
+    width: 66%;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin:0px;
+    white-space: nowrap;
+    transform: scale(1.2);
+    background: linear-gradient(-90deg, purple);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -moz-background-clip: text;
+    -moz-text-stroke: 4px transparent;
+    position: relative;
+}
+.myname h1::before{
+    content: "HI, I'M MUTHU KRISHNAN";
+    font-size: 3rem;
+    white-space: nowrap;
+    color: purple;
+    height: 100%;
+    width: 100%;
+    border-right: 2px solid purple;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    left: 0px;
+    animation: slideshow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slideshow{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+    .text1{
+        padding: 0px 0px 0px 0px;
+    }
+    .text2{
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .but{
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* Laptop Second Page */
+
+    .secondpage{
+        top: 550px;
+        background-color: black;
+    }
+        .runing{
+        width: 3000%;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        transform: scale(1.2);
+        background: linear-gradient(-90deg, purple);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        -moz-background-clip: text;
+        -moz-text-stroke: 4px transparent;
+    }
+    .abouthead{
+        padding: 40px 0px 0px;
+    }
+    .aboutbody{
+    background-color: black;
+}
+    .pictureside{
+        min-height: 500px;
+        width: 50%;
+    }
+    .contentside{
+        min-height: 500px;
+        width: 50%;
+    }
+    .imagebox{
+        height: 350px;
+        width: 300px;
+        z-index: 1;
+        right: 80px;
+        top: 100px;
+    }
+    .picture{
+        border: 2px solid purple;
+    }
+    .imagebox1{
+        height: 200px;
+        width: 200px;
+        top: 340px;
+        right: 260px;
+    }
+    .side1{
+        height: 150px;
+        margin: 90px 0px 0px 0px;
+        width: 80%;
+       
+    }
+    .side2{
+        height: 160px;
+        width: 90%;
+        margin: 15px 0px 0px 50px;
+        padding: 0px 15px 0px 10px;
+    }
+    .side3{
+        padding: 0px 0px 0px 20px;
+    }
+    .firside{
+        height: 70px;
+        width: 35%;
+    }
+    .secside{
+        height: 70px;
+        width: 35%;
+    }
+    .firside h1{
+        margin: 2px 0px 0px 0px;
+    }
+     .secside h1{
+        margin: 2px 0px 0px 0px;
+    }
+
+    /* Laptop Third Page */
+
+    .thirdpage{
+        height: 100vh;
+        top: 570px;
+        background-color: black;
+    }
+    .skillhead{
+        padding: 40px 0px 0px;
+    }
+    .skillbody{
+        background-color: black;
+            grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .fullcard{
+        height: 400px;
+        width: 400px;
+    }
+    .centercard{
+        height: 300px;
+        width: 300px;
+    }
+    .overview{
+        height: 80px;
+        width: 40px;
+        top: 110px;
+        left: -20px;
+    }
+
+    /* Laptop Fourth Page */
+
+    .fourthpage{
+        top: 1150px;
+        background-color: black;
+    }
+    .projecthead{
+        padding: 40px 0px 0px;
+    }
+    .projectbody{
+        background-color: black;
+        min-height: 80vh;
+    }
+    .projects{
+        grid-template-columns: auto auto;
+    }
+    .project1{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.project2{
+    height: 40vh;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    animation: reveal 5s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+.project2 img{
+    height: 100%;
+    width: 100%;
+}
+@keyframes reveal{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Laptop Fifth Page */
+
+    .fifthpage{
+        top: 1240px;
+        background-color: black;
+    }
+    .educationhead{
+        padding: 40px 0px 0px;
+    }
+    .educationbody{
+        min-height: 100vh;
+    }
+    .educationhead{
+        padding: 40px 0px 0px;
+    }
+    .educationbody{
+        min-height: 70vh;
+        gap: 20px;
+    }
+    .percentage1{
+        top: 300px;
+    }
+    .percentage2{
+        top: 300px;
+    }
+    .percentage3{
+        top: 300px;
+    }
+
+    /* Labtop Sixth Page */
+
+    .sixthpage{
+        top: 1120px;
+    }
+    .contacthead{
+        padding: 40px 0px 0px;
+    }
+    .contactbody{
+        grid-template-columns: auto auto auto;
+    }
+}

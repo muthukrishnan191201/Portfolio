@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.side{
+    background-color: rgb(4, 4, 65);
+}
+.side1{
+    background-color: rgb(4, 4, 65);
+}
+.picture{
+    height: 300px;
+    width: 70%;
+    margin: 140px;
+}
+#int1{
+    flex: 0 0 auto;
+}
+.picture1{
+    height: 300px;
+    width: 70%;
+    margin: 140px;
+}
+.image{
+    background-color: gainsboro;
+}
+.pad{
+    padding: 100px 0px 226px;
+}
+.side2{
+    background-color: gainsboro;
+}
+.im{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
